@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AFIRM Job Application Form</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <h1>AFIRM Job Application Form</h1>
+    <form action="submit.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" required><br>
+
+      <label for="ssn">Social Security Number:</label>
+      <input type="text" name="ssn" pattern="[0-9]{9}" required><br>
+
+      <label for="address">Address:</label>
+      <textarea name="address" required></textarea><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="phone" pattern="[0-9]{10}" required><br>
+
+      <label for="availability">Smartphone/Laptop Availability:</label>
+      <input type="text" name="availability" required><br>
+
+      <input type="submit" value="Submit">
+	  <form method="post" action="submit.php">
+	  </form>
+  </body>
+</html>
